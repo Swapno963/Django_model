@@ -20,6 +20,7 @@
         <th scope="col">Roll</th>
         <th scope="col">Father Name</th>
         <th scope="col">Address</th>
+        <th scope="col">Delete Student</th>
       </tr>
     </thead>
     <tbody>
@@ -29,6 +30,7 @@
         <td>{{dt.roll}}</td>
         <td>{{dt.father_name}}</td>
         <td>{{dt.address}}</td>
+        <td><a class="btn btn-danger text-white" href="{%url 'delete_student' dt.roll%}">Delete</a></td>
       </tr>
 
       {%endfor%}
